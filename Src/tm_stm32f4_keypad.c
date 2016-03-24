@@ -17,10 +17,11 @@
  * |----------------------------------------------------------------------
  */
 #include "tm_stm32f4_keypad.h"
+#include "stm32f4xx_hal.h"
 
 /* Pins configuration, columns are outputs */
 #define KEYPAD_COLUMN_1_HIGH		TM_GPIO_SetPinHigh(KEYPAD_COLUMN_1_PORT, KEYPAD_COLUMN_1_PIN)
-#define KEYPAD_COLUMN_1_LOW			TM_GPIO_SetPinLow(KEYPAD_COLUMN_1_PORT, KEYPAD_COLUMN_1_PIN)
+#define KEYPAD_COLUMN_1_LOW			HAL_GPIO_WritePin(KEYPAD_COLUMN_1_PORT, KEYPAD_COLUMN_1_PIN,0u)
 #define KEYPAD_COLUMN_2_HIGH		TM_GPIO_SetPinHigh(KEYPAD_COLUMN_2_PORT, KEYPAD_COLUMN_2_PIN)
 #define KEYPAD_COLUMN_2_LOW			TM_GPIO_SetPinLow(KEYPAD_COLUMN_2_PORT, KEYPAD_COLUMN_2_PIN)
 #define KEYPAD_COLUMN_3_HIGH		TM_GPIO_SetPinHigh(KEYPAD_COLUMN_3_PORT, KEYPAD_COLUMN_3_PIN)

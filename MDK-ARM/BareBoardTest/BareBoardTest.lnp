@@ -1,5 +1,4 @@
 --cpu Cortex-M4.fp
-"bareboardtest\startup_stm32f407xx.o"
 "bareboardtest\gpio.o"
 "bareboardtest\stm32f4xx_it.o"
 "bareboardtest\main.o"
@@ -23,6 +22,7 @@
 "bareboardtest\stm32f4xx_hal_rcc.o"
 "bareboardtest\stm32f4xx_hal.o"
 "bareboardtest\stm32f4xx_hal_flash.o"
+"bareboardtest\startup_stm32f407xx.o"
 --library_type=microlib --strict --scatter "BareBoardTest\BareBoardTest.sct"
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

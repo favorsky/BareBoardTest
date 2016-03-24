@@ -28,10 +28,13 @@ Project File Date:  03/24/2016
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'BareBoardTest'
 compiling tm_stm32f4_keypad.c...
-compiling tm_stm32_gpio.c...
+..\Src\tm_stm32f4_keypad.c(108): warning:  #188-D: enumerated type mixed with another type
+  		
+EYPAD_COLUMN_1_LOW;
+..\Src\tm_stm32f4_keypad.c: 1 warning, 0 errors
 linking...
-Program Size: Code=2496 RO-data=440 RW-data=8 ZI-data=512  
-"BareBoardTest\BareBoardTest.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=3212 RO-data=440 RW-data=32 ZI-data=544  
+"BareBoardTest\BareBoardTest.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -49,7 +52,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

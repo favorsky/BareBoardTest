@@ -28,3 +28,6 @@ bareboardtest\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ra
 bareboardtest\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 bareboardtest\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 bareboardtest\main.o: ../Inc/gpio.h
+bareboardtest\main.o: ..\Src\tm_stm32f4_keypad.h
+bareboardtest\main.o: ..\Src\defines.h
+bareboardtest\main.o: ..\Src\tm_stm32_gpio.h
