@@ -36,13 +36,15 @@
 
 /* USER CODE BEGIN Includes */
 
+#include <tm_stm32f4_keypad.h>
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+TM_KEYPAD_Button_t Button;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -76,7 +78,7 @@ int main(void)
   MX_GPIO_Init();
 
   /* USER CODE BEGIN 2 */
-
+  TM_KEYPAD_Init(TM_KEYPAD_Type_Large);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -84,7 +86,8 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
-
+  TM_KEYPAD_Update();
+	Button = TM_KEYPAD_Read();	
   /* USER CODE BEGIN 3 */
 
   }
